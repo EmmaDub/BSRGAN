@@ -51,7 +51,8 @@ def main():
 
     save_results = True
     sf = 4
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    #device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    device = torch.device('cpu')   
 
     for model_name in model_names:
         if model_name in ['BSRGANx2']:
