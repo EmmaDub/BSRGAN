@@ -61,7 +61,7 @@ def main():
         logger.info('{:>16s} : {:s}'.format('Model Name', model_name))
 
         # torch.cuda.set_device(0)      # set GPU ID
-        logger.info('{:>16s} : {:<d}'.format('GPU ID', torch.cuda.current_device()))
+        #logger.info('{:>16s} : {:<d}'.format('GPU ID', torch.cuda.current_device()))
         torch.cuda.empty_cache()
 
         # --------------------------------
